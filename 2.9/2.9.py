@@ -1,0 +1,8 @@
+f = open("poem_2.txt","w")
+f.write("When I think about myself, ", file=f)
+f.write("I almost laugh myself to death. ", file=f)
+f.close()
+f = open("poem_2.txt","r")
+data = f.read()
+print(data)
+f.close()
