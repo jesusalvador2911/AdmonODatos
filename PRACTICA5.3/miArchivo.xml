@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<peliculas>
+  <pelicula peli_id="1">
+    <titulo>La muerte tiene un precio</titulo>
+    <año>1965</año>
+    <genero>Acción</genero>
+    <clasificacion>B15</clasificacion>
+  </pelicula>
+<pelicula peli_id="2"><titulo>cubo</titulo><año>1930</año><genero>Acción</genero><clasificacion>A</clasificacion></pelicula></peliculas>
