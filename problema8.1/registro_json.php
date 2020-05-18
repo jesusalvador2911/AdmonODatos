@@ -5,20 +5,26 @@ require_once('./ClassPelicula.php');
 $archivo_json = "peliculas.json";
 
 $Pelicula1 = new Pelicula(
-    "Avengers: Endgame",
-    "Superhéroes",
-    "181 minutos",
-    "B",
-    "Robert Downey Jr."
+    "Cars",
+    "Animación",
+    "1h 57m",
+    "AA",
+    "Owen Wilson, Larry The Cable guy, Paul Newman."
 );
 $Pelicula2 = new Pelicula(
-    "Sonic the Hedgehog",
-    "Acción",
-    "99 minutos",
+    "Shrek",
+    "Animación",
+    "1h 35m",
     "AA",
-    "Jim Carrey"
+    "Mike Myers, Eddie Murphy, Cameron Diaz, John Lithgow."
 );
-
+$Pelicula3 = new Pelicula(
+    "Once Upon a Time in Hollywood",
+    "Comedia/Drama",
+    "2h 40m",
+    "B15",
+    "Leonardo Dicaprio, Brad Pitt, Al Pacino, Margot Robbie."
+);
 
 $Peliculas = array();
 
@@ -26,6 +32,7 @@ $Peliculas[] = $Pelicula1;
 
 $Peliculas[] = $Pelicula2;
 
+$Peliculas[] = $Pelicula3;
 $json_string = json_encode($Peliculas);
 
 $arch = fopen($archivo_json,'w');
