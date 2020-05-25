@@ -1,0 +1,47 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi segunda gráfica de representación de datos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+</head>
+<body>
+    <div class="ct-chart ct-minor-seventh"></div>
+    <script>
+        var datos = {
+
+        labels: ['Lun', 'Mar', 'Mie', 'Jue', 'Vie'],
+
+        series: [
+            [5, 4, 3, 7, 5, 10],
+            [3, 2, 9, 5, 4, 6],
+            [2, 1, -3, -4, -2, 0]
+        ]
+    };
+
+        var opciones = {
+
+            showPoint: false,
+
+            lineSmooth: false,
+
+            axisX: {
+
+                showGrid: false,
+
+                showLabel: false
+        },
+        axisY: {
+
+            offset: 60,
+            labelInterpolationFnc: function (value) {
+            return '$' + value + 'm';
+            }
+        }
+    };
+    new Chartist.Line('.ct-chart', datos, opciones);
+    </script>
+    <div></div>
+
+</body>
+</html>
