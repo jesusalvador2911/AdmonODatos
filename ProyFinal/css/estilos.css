@@ -1,0 +1,41 @@
+h2 {
+  font-weight: bolder;
+}
+
+.ct-series-a .ct-line {
+
+  stroke:rgb(255, 0, 0);
+
+  stroke-width: .25rem;
+ 
+}
+.ct-series-b .ct-line {
+
+  stroke: yellow;
+  stroke-width: .25rem;
+  
+}
+.temp-box{
+  width: 50px;
+  
+}
+.temp{
+  display: inline-flex;
+}
+.max{
+background-color: rgb(255, 0, 0);
+
+}
+.min{
+  background-color: yellow;
+}
+.subt{
+  display: block;
+  color:rgb(0, 15, 151);
+  
+  font-size: large;
+}
+.centro{
+  text-align: center;
+  color: black;
+}
